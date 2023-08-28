@@ -1,0 +1,101 @@
+$base-color: #000
+$light-green: #00ff19
+$light-blue: #2B4EEF
+$grey: rgba(255, 255, 255, 0.50)
+$grey-light: #00000080
+
+*
+  transition: 0.1s all ease 
+
+body
+  font-family: 'ALS_VAR'
+  color: $base-color
+  text-align: left
+  margin: 0
+
+h1, h2, h3, p, span
+  margin: 0
+
+mark
+  background-color: transparent
+  position: relative
+
+mark:after
+  background-color: $light-green
+  content: ""
+  width: 100%
+  position: absolute
+  height: 100%
+  left: 0
+  z-index: -1
+  margin-top: -5px
+
+h1
+  font-size: 28px
+  font-weight: 600
+
+p
+  font-weight: 400
+  font-size: 20px
+
+span
+  color: $grey
+  font-weight: 400
+  font-weight: 400
+  font-size: 16px
+
+.span-black
+  color: $grey-light
+  
+button
+  font-size: 28px
+  font-weight: 600
+  cursor: pointer
+
+hr
+  width: 100%
+  background-color: #FFFFFF33
+  height: 1px
+  margin: 0
+  border: none
+
+.hr-black
+  background-color: #00000033
+
+
+.app__container
+  max-width: 1200px
+  margin-top: 69px
+  margin-left: auto
+  margin-right: auto
+  padding: 0 119px 0 119px
+
+
+.posts-header__h1 
+  font-family: 'ALS_VAR_Bold'
+  font-weight: bold
+  font-size: 48px
+  line-height: 48px
+
+@media (max-width: 1024px)
+  p
+    font-size: 16px
+  h1
+    font-size: 24px
+  button
+    font-size: 24px
+  span
+    font-size: 14px
+
+  mark:after
+    margin-top: -2.5px
+
+  .app__container
+    padding: 0 8px 0 8px
+    margin-top: 32px
+
+  .posts-header__h1 
+    font-family: 'ALS_VAR_Bold'
+    font-weight: bold
+    font-size: 28px
+    line-height: 32px
